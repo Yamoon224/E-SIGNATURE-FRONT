@@ -44,7 +44,7 @@ export default function SignPage() {
         setDocument({
           id: doc.id.toString(),
           name: doc.filename,
-          path: "http://localhost:8080/" + doc.path.replace(/\\/g, "/"), // sécurité si le path contient des backslashes
+          path: "https://e-signature-lii6.onrender.com/" + doc.path.replace(/\\/g, "/"), // sécurité si le path contient des backslashes
           uploadDate: doc.createdAt,
           status: doc.signed ? "signed" : "unsigned",
         })

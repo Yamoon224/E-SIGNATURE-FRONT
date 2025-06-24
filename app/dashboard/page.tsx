@@ -103,7 +103,7 @@ export default function DashboardPage() {
         docs.map((doc: any) => ({
           id: doc.id.toString(),
           name: doc.filename,
-          path: "http://localhost:8080/" + doc.path.replace(/\\/g, "/"),
+          path: "https://e-signature-lii6.onrender.com/" + doc.path.replace(/\\/g, "/"),
           uploadDate: doc.createdAt,
           status: doc.signed ? "signed" : "unsigned",
         }))
